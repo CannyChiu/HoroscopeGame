@@ -5,6 +5,35 @@ body {
   margin: 0;
 }
 
+
+/* Banner will expand if hovered over */
+nav:hover{
+  height:650px
+}
+
+nav{
+ transition-property:height;
+ transition-duration: 5s;
+ transition-timing-function: ease-out;
+ transition-delay: .2ms;
+}
+
+/* elements should change color if hovered over */
+h2,h4{
+ transition-property:color;
+ transition-duration: 5s;
+ transition-timing-function: ease-out;
+ transition-delay: 1s;
+}
+
+h2:hover {
+color:#ff9966;
+}
+
+h4:hover {
+color:#ff9966;
+}
+
 /* Styles for the title */
 h1 {
   text-align: center;
@@ -84,37 +113,3 @@ flex-wrap: wrap;
   font-size: 25px;
 }
 
-nav:hover{
-  height:650px
-}
-
-nav{
- transition-property:height;
- transition-duration: 5s;
- transition-timing-function: ease-out;
- transition-delay: .1ms;
-}
-
-a,h2,h3,h4:hover {
-color:#ff9966;
-}
-
-a,h2,h3,h4{
- transition-property:color;
- transition-duration: 5s;
- transition-timing-function: ease-out;
- transition-delay: .1ms;
-}
-
-/* DRY, try to fix the below 3 */
-h2::selection{
- color:#ff9966;
-}
-
-h3::selection{
- color:#ff9966;
-}
-
-h4::selection{
- color:#ff9966;
-}
