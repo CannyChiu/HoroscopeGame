@@ -76,7 +76,7 @@ image, #imageDiv {
 button {
   margin: 0;
   font-size: 20px;
-  position: absolute;
+  position: relative;
   top: 90%;
   left: 90%;
   -ms-transform: translate(-50%, -50%);
