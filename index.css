@@ -1,0 +1,120 @@
+/* Standardize the page */
+body {
+  font-family: Lato;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styles for the title */
+h1 {
+  text-align: center;
+  font-size: 60px;
+  font-style: bold;
+  color: #0A369D;
+}
+
+/* This is the styling of the original H2 elements */
+h2 {
+  font-size:30px;
+  padding: 0px 150px;
+
+}
+/* This is the style for the dates that appear */
+h3{
+  font-size:30px;
+  text-align: center;
+  color: #5E7CE2;
+}
+/* This is the style for the horoscope descriptions */
+h4 {
+  font-size:25px;
+  font-style: italic;
+  text-align: center;
+  color: #5E7CE2;
+}
+
+/* Styles for the H2 elements that appear due to Jquery */
+.sunsigncss {
+  font-size:50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+image, #imageDiv {
+  text-align: center;
+}
+
+button {
+  margin: 0;
+  font-size: 40px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #0A369D;
+}
+
+.Sunsignscontainer {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+flex-wrap: wrap;
+  padding: 40px 300px;
+  color: #5E7CE2;
+}
+
+.sunsigncss{
+  color: #0A369D;
+}
+
+
+.Horoscope {
+  margin: 0 auto;
+  padding: 0 800px;
+}
+
+/* Banner CSS */
+.topnav {
+  color:#0A369D;
+  text-align: right;
+  background: url("https://i.cbc.ca/1.3939619.1534456647!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_620/good-witch-horoscope-recs.jpg");
+  height: 150px;
+  text-align:right;
+  font-size: 25px;
+}
+
+nav:hover{
+  height:650px
+}
+
+nav{
+ transition-property:height;
+ transition-duration: 5s;
+ transition-timing-function: ease-out;
+ transition-delay: .1ms;
+}
+
+a,h2,h3,h4:hover {
+color:#ff9966;
+}
+
+a,h2,h3,h4{
+ transition-property:color;
+ transition-duration: 5s;
+ transition-timing-function: ease-out;
+ transition-delay: .1ms;
+}
+
+/* DRY, try to fix the below 3 */
+h2::selection{
+ color:#ff9966;
+}
+
+h3::selection{
+ color:#ff9966;
+}
+
+h4::selection{
+ color:#ff9966;
+}

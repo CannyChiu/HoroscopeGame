@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Horoscope project</title>
+  <!-- Linking to CSS file, Lato font, initial JS file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./index.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="topnav">
+    <a href="https://www.linkedin.com/in/cannychiu/">Canny Chiu, Technical Recruiter | Web Developer </a>
+  </NAV>
+  <H1>Daily Horoscope</H1>
+  <!-- Created a larger section to use Flexbox -->
+  <section class="results">
+    <!-- SunSigns that load on the page-->
+    <div class="Sunsignscontainer">
+      <h2 class="sunsign1">Aquarius</h2>
+      <h2 class="sunsign2">Pisces</h2>
+      <h2 class="sunsign3">Aries</h2>
+      <h2 class="sunsign4">Taurus</h2>
+      <h2 class="sunsign5">Gemini</h2>
+      <h2 class="sunsign6">Cancer</h2>
+      <h2 class="sunsign7">Leo</h2>
+      <h2 class="sunsign8">Virgo</h2>
+      <h2 class="sunsign9">Libra</h2>
+      <h2 class="sunsign10">Scorpio</h2>
+      <h2 class="sunsign11">Sagittarius</h2>
+      <h2 class="sunsign12">Capricorn</h2>
+    </div>
+
+    <!-- This is a div to hold the results of the Star Sign -->
+    <div class="Horoscope"></div>
+    <!-- Created a section to insert an image using Javascript -->
+    <div id="imageDiv"></div>
+  </section>
+  <!-- Back button, when clicked, should hide results -->
+
+  <button type="button" name="button" class="backbutton">
+    Back Button</button>
+
+
+
+
+
+  <!-- Calling JQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
